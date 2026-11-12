@@ -1,11 +1,14 @@
 ﻿using System;
 using Morrowmere.Domain.Models;
-public class SimulationEngine
+namespace Morrowmere.Simulation.Engines
 {
-    public void AdvanceTime(WorldState world)
+    public class SimulationEngine
     {
-        if (world == null)
-            throw new ArgumentNullException(nameof(world));
-        world.Clock.AdvanceTime();
+        public void AdvanceTime(WorldState world)
+        {
+            if (world == null)
+                throw new ArgumentNullException(nameof(world));
+            world.Clock.AdvanceTime();
+        }
     }
 }

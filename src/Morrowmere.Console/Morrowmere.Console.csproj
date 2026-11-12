@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Morrowmere.Simulation\Morrowmere.Simulation.csproj" />
+	 <ProjectReference Include="..\Morrowmere.Domain\Morrowmere.Domain.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

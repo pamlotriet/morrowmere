@@ -1,4 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Threading.Tasks;
+using System.Timers;
 namespace Morrowmere.Domain.Models
 {
     public class SimulationClock
@@ -22,16 +24,15 @@ namespace Morrowmere.Domain.Models
             Day = day;
             Hour = hour;
         }
-
-        public void AdvanceTime()
+         
+        public async Task AdvanceTime()
         {
-            Hour++;
-
-            if (Hour > 23)
-            {
-                Hour = 0;
-                Day++;
-            }
+                Hour++;
+                if (Hour > 23)
+                {
+                    Hour = 0;
+                    Day++;
+                }
         }
     }
 }
