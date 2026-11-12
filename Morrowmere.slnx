@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Morrowmere.Console/Morrowmere.Console.csproj" />
+    <Project Path="src/Morrowmere.Domain/Morrowmere.Domain.csproj" />
+    <Project Path="src/Morrowmere.Simulation/Morrowmere.Simulation.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Morrowmere.Simulation.Tests/Morrowmere.Simulation.Tests.csproj" />
+  </Folder>
+</Solution>
